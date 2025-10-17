@@ -2,3 +2,4 @@
 
 - [x] Cualquier célula viva con menos de dos vecinas vivas muere
 - [ ] Cualquier célula viva con mas de dos vecinas vivas continua con vida
+- [ ] Una celula muerta no puede revivir

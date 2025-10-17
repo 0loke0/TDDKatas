@@ -16,6 +16,19 @@ public class GameOfLifeTest
         //Assert
         celula.EstaViva.Should().Be(false);
     }
+    
+    //Cualquier célula viva con mas de dos vecinas vivas continua con vida
+    [Fact]
+    public void Si_CelulaVivaConAlmenosDosVecinas_Debe_ContinuarViva()
+    {
+        Celula celula = new Celula();
+        
+        //Act 
+        celula.ValidarSiLaCelulaEstaViva(3);
+        
+        //Assert
+        celula.EstaViva.Should().Be(true);
+    }
 }
 
 public class Celula
@@ -27,6 +40,6 @@ public class Celula
             EstaViva = false;
         }
     }
-
-    public object EstaViva { get; set; } = true;
+    
+    public object EstaViva { get; set; } = false;
 }
