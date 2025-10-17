@@ -22,8 +22,7 @@ public class Celula
 {
     public void ValidarSiLaCelulaEstaViva(int i)
     {
-        throw new NotImplementedException();
     }
 
-    public object EstaViva { get; set; }
+    public object EstaViva { get; set; } = false;
 }

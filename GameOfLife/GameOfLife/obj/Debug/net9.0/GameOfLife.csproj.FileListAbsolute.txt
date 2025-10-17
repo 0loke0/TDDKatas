@@ -97,3 +97,4 @@ C:\Users\user\Documents\Cosmos\TDDKatas\GameOfLife\GameOfLife\obj\Debug\net9.0\G
 C:\Users\user\Documents\Cosmos\TDDKatas\GameOfLife\GameOfLife\obj\Debug\net9.0\GameOfLife.genruntimeconfig.cache
 C:\Users\user\Documents\Cosmos\TDDKatas\GameOfLife\GameOfLife\obj\Debug\net9.0\ref\GameOfLife.dll
 C:\Users\user\Documents\Cosmos\TDDKatas\GameOfLife\GameOfLife\bin\Debug\net9.0\AwesomeAssertions.dll
+C:\Users\user\Documents\Cosmos\TDDKatas\GameOfLife\GameOfLife\obj\Debug\net9.0\GameOfLife.sourcelink.json
