@@ -73,11 +73,14 @@ public class Celula
             EstaViva = false;
         }
     }
-    public object EstaViva { get; set; } = true;
+    public bool EstaViva { get; set; } = true;
 
     public void ValidarSiLaCelulaRevive(int celulasVivasAdyacentes)
-    { 
-        this.EstaViva = true; 
+    {
+        if (this.EstaViva == false && celulasVivasAdyacentes == 3)
+        {
+            this.EstaViva = true; 
+        }
     }
 }
 
