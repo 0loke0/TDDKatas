@@ -54,12 +54,7 @@ public class Celula
 {
     public void ValidarSiLaCelulaEstaViva(int celulasVivasAdyacentes)
     {
-        if (celulasVivasAdyacentes > 3)
-        {
-            EstaViva = false;
-        }
-
-        if (celulasVivasAdyacentes < 2 )
+        if (celulasVivasAdyacentes < 2 | celulasVivasAdyacentes > 3)
         {
             EstaViva = false;
         }
