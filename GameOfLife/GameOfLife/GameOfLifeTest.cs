@@ -35,11 +35,11 @@ public class Celula
 {
     public void ValidarSiLaCelulaEstaViva(int celulasVivasAdyacentes)
     {
-        if (celulasVivasAdyacentes <= 2)
+        if (celulasVivasAdyacentes < 2)
         {
             EstaViva = false;
         }
     }
     
-    public object EstaViva { get; set; } = false;
+    public object EstaViva { get; set; } = true;
 }
