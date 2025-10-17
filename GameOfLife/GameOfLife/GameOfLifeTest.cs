@@ -34,6 +34,20 @@ public class GameOfLifeTest
           //Assert
           celula.EstaViva.Should().Be(true);
     }
+    
+    //Cualquier célula viva con más de tres vecinas vivas muere
+    [Fact]
+    public void Si_CelulaVivaConMasDeTresVecinas_Debe_Morir()
+    {   
+        //Arrange
+        Celula celula = new Celula();
+          
+        //Act 
+        celula.ValidarSiLaCelulaEstaViva(4);
+          
+        //Assert
+        celula.EstaViva.Should().Be(false);
+    }
 }
 
 public class Celula
