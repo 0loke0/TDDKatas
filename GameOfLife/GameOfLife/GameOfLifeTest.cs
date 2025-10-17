@@ -48,6 +48,20 @@ public class GameOfLifeTest
         //Assert
         celula.EstaViva.Should().Be(false);
     }
+    
+    // Cualquier célula muerta con exactamente tres vecinas vivas se convierte en una célula viva
+    [Fact]
+    public void Si_UnaCelulaMuertaTieneExactamenteTresCelulasVecianas_Debe_Revivir()
+    {   
+        //Arrange
+        Celula celula = new Celula();
+          
+        //Act
+        celula.ValidarSiLaCelulaRevive();
+          
+        //Assert
+        celula.EstaViva.Should().Be(true);
+    }
 }
 
 public class Celula
@@ -60,6 +74,11 @@ public class Celula
         }
     }
     public object EstaViva { get; set; } = true;
+
+    public void ValidarSiLaCelulaRevive()
+    {
+        throw new NotImplementedException();
+    }
 }
 
 // public class GameOfLife {
