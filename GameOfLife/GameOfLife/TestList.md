@@ -4,7 +4,10 @@
 - [X] Cualquier célula viva con dos o tres vecinas vivas pasa a la siguiente generación
 - [x] Cualquier célula viva con más de tres vecinas vivas muere, como por sobrepoblación.
 - [X] Cualquier célula muerta con exactamente tres vecinas vivas se convierte en una célula viva
-- 
+- [ ] Las células fuera de los límites de la matriz deben considerarse permanentemente muertas
 
 --Test deprecados
 - [ ] Cualquier célula viva con mas de dos vecinas vivas continua con vida
+
+-Diccionario
+    Mundo = Matris
