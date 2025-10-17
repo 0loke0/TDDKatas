@@ -57,7 +57,7 @@ public class GameOfLifeTest
         Celula celula = new Celula();
           
         //Act
-        celula.ValidarSiLaCelulaRevive();
+        celula.ValidarSiLaCelulaRevive(3);
           
         //Assert
         celula.EstaViva.Should().Be(true);
@@ -75,9 +75,9 @@ public class Celula
     }
     public object EstaViva { get; set; } = true;
 
-    public void ValidarSiLaCelulaRevive()
-    {
-        throw new NotImplementedException();
+    public void ValidarSiLaCelulaRevive(int celulasVivasAdyacentes)
+    { 
+        this.EstaViva = true; 
     }
 }
 
