@@ -45,8 +45,7 @@ public class Celula
             EstaViva = false;
         }
     }
-    
-    public object EstaViva { get; set; } = false;
+    public object EstaViva { get; set; } = true;
 }
 
 // public class GameOfLife {
