@@ -60,7 +60,7 @@ namespace GameOfLife
             //Arrange
           
             //Act
-            celula.ValidarSiLaCelulaRevive(3);
+            celula.ValidarSiLaCelulaRevive(3,30, 20,10,10);
           
             //Assert
             celula.EstaViva.Should().Be(true);
@@ -73,10 +73,10 @@ namespace GameOfLife
             //Arrange
           
             //Act
-            celula.ValidarSiLaCelulaRevive(3);
+            celula.ValidarSiLaCelulaRevive(3, 30, 20,30,20);
           
             //Assert
-            celula.EstaViva.Should().Be(true);
+            celula.EstaViva.Should().Be(false);
         }
     }
 }   

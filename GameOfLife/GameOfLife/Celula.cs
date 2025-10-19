@@ -10,7 +10,7 @@ public class Celula
     }
     public bool EstaViva { get; set; } = true;
 
-    public void ValidarSiLaCelulaRevive(int celulasVivasAdyacentes)
+    public void ValidarSiLaCelulaRevive(int celulasVivasAdyacentes,int limiteXMaximo,int limiteYMaximo,int posicionX,int posicionY)
     {
         if (this.EstaViva == false && celulasVivasAdyacentes == 3)
         {
